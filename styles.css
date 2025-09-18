@@ -1,0 +1,20 @@
+/* base page styles */
+body {
+  background: #f8feff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 40px;
+}
+
+/* headings */
+h1 {
+  text-align: center;
+  color: #6f7bfc;
+}
+
+/* example custom section */
+.about {
+  background: #00b3d1;
+  padding: 1rem;
+  border-radius: 8px;
+  color: white;
+}
