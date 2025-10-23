@@ -1,46 +1,129 @@
-/* === Affinity Diagram === */
-.container { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+/* ==== General Reset ==== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f8;
+  color: #222;
+  line-height: 1.6;
+}
 
-.section-lede { margin: .5rem 0 1rem; opacity: .9; }
+header {
+  background-color: #004aad;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
 
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  color: #004aad;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+/* ==== Footer ==== */
+footer {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* ==== Affinity Diagram Styling ==== */
 .affinity-board {
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(240px, 1fr) );
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
-  align-items: start;
+  margin-top: 1rem;
 }
 
 .cluster {
   background: #ffffff;
-  border: 1px solid rgba(0,0,0,.07);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   padding: 1rem;
-  box-shadow: 0 4px 18px rgba(0,0,0,.06);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
 .cluster h3 {
-  margin: 0 0 .5rem 0;
-  font-size: 1.05rem;
-  letter-spacing: .2px;
+  margin-top: 0;
+  color: #0078ff;
 }
 
-.stickies { list-style: none; margin: 0; padding: 0; display: grid; gap: .75rem; }
+.stickies {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
 .stickies li {
-  background: #fff8b3;            /* sticky note vibe */
-  border: 1px solid rgba(0,0,0,.08);
-  border-radius: 10px;
-  padding: .6rem .7rem;
-  box-shadow: 0 6px 10px rgba(0,0,0,.07);
-  transform: rotate(-.3deg);
+  background: #fff8b3;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 0.6rem;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.08);
+  transform: rotate(-0.5deg);
 }
 
-.stickies li:nth-child(2n) { background: #c9f7ff; transform: rotate(.4deg); }
-.stickies li:nth-child(3n) { background: #e9ffe0; transform: rotate(-.6deg); }
+.stickies li:nth-child(2n) {
+  background: #c9f7ff;
+  transform: rotate(0.5deg);
+}
 
-.caption { margin-top: .5rem; font-size: .9rem; opacity: .8; }
+.stickies li:nth-child(3n) {
+  background: #e9ffe0;
+  transform: rotate(-0.8deg);
+}
 
-/* Print-friendly */
-@media print {
-  .affinity-board { grid-template-columns: repeat(2, 1fr); gap: .6rem; }
-  .stickies li { box-shadow: none; transform: none; }
+.caption {
+  text-align: center;
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+  nav a {
+    display: inline-block;
+    margin: 6px;
+  }
 }
