@@ -127,3 +127,83 @@ footer {
     margin: 6px;
   }
 }
+
+/* ==== Project Management 4 — Sketches Section ==== */
+#sketches {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+#sketches h2 {
+  color: #004aad;
+  margin-bottom: 0.5rem;
+}
+
+#sketches .lede {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.sketch-figure {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.sketch-hero {
+  width: 100%;
+  max-width: 850px;
+  height: auto;
+  border: 2px solid #004aad;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.sketch-figure figcaption {
+  color: #333;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+.links-row {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.1rem;
+  border-radius: 8px;
+  border: 2px solid #004aad;
+  color: #004aad;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: #004aad;
+  color: white;
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  border-color: #d1d5db;
+  color: #333;
+}
+
+.btn-ghost:hover {
+  background: #f3f4f6;
+  color: #111;
+}
+
+.pdf-embed object {
+  width: 100%;
+  height: 70vh;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
