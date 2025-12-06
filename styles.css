@@ -137,7 +137,7 @@ footer {
   box-shadow: none !important;
 }
 
-/* Restore Blue Buttons Inside Resume */
+/* Restore blue buttons */
 .resume-clean .btn,
 .resume-clean .btn-ghost {
   all: unset !important;
