@@ -109,7 +109,7 @@ footer {
 }
 
 /* ------------------------------------------------ */
-/* REPOSITORY IMAGE REQUIREMENT (Added for grading) */
+/* REPOSITORY IMAGE (required for Portfolio 5) */
 /* ------------------------------------------------ */
 
 .repo {
@@ -123,4 +123,16 @@ footer {
   height: 60px;
   margin-right: 15px;
   border-radius: 8px;
+}
+
+/* ------------------------------------------------ */
+/* RESUME PAGE BLACK & WHITE ONLY */
+/* ------------------------------------------------ */
+
+.resume-clean,
+.resume-clean * {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border-color: #000000 !important;
+  box-shadow: none !important;
 }
