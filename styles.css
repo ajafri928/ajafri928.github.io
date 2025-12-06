@@ -107,3 +107,14 @@ footer {
   color: white;
   margin-top: 20px;
 }
+
+/* ——————————————————————————————— */
+/* ONLY MAKE THE RESUME PAGE BLACK & WHITE */
+/* ——————————————————————————————— */
+
+.resume-clean,
+.resume-clean * {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border-color: #000000 !important;
+  box-shadow: none
