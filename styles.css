@@ -126,7 +126,7 @@ footer {
 }
 
 /* ------------------------------------------------ */
-/* RESUME PAGE BLACK & WHITE ONLY */
+/* RESUME PAGE – BLACK & WHITE */
 /* ------------------------------------------------ */
 
 .resume-clean,
@@ -135,4 +135,44 @@ footer {
   color: #000000 !important;
   border-color: #000000 !important;
   box-shadow: none !important;
+}
+
+/* ------------------------------------------------ */
+/* RESTORE BLUE BUTTONS INSIDE resume-clean */
+/* ------------------------------------------------ */
+
+.resume-clean .btn,
+.resume-clean .btn *,
+.resume-clean .btn-ghost,
+.resume-clean .btn-ghost * {
+  all: unset !important;
+  display: inline-block !important;
+  padding: 10px 16px !important;
+  border-radius: 5px !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  margin-right: 10px !important;
+  font-family: Arial, sans-serif !important;
+}
+
+/* Solid blue button */
+.resume-clean .btn {
+  background-color: #007bff !important;
+  color: white !important;
+}
+
+.resume-clean .btn:hover {
+  background-color: #0056b3 !important;
+}
+
+/* Outline blue button */
+.resume-clean .btn-ghost {
+  background-color: transparent !important;
+  border: 2px solid #007bff !important;
+  color: #007bff !important;
+}
+
+.resume-clean .btn-ghost:hover {
+  background-color: #007bff !important;
+  color: white !important;
 }
