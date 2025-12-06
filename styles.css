@@ -176,3 +176,11 @@ footer {
   background-color: #007bff !important;
   color: white !important;
 }
+/* IMAGE PREVIEW STYLING */
+.repo-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  margin: 15px 0;
+  display: block;
+}
